@@ -1,0 +1,67 @@
+h1 {
+    color: #998dc4;
+    font-size: 400%;
+  }
+  
+  body {
+    color: #998dc4;
+    margin: 40px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  .content2 {
+      grid-area: content2;
+    }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 450px 450px 450px;
+    grid-template-areas:
+      "header header header"
+      "sidebar content content2"
+      "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .box {
+    background-color: #999;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+  }
+  
+  .header,
+  .footer {
+    background-color: #998dc4;
+  }
+  
+  a:link {
+      color: rgb(133, 90, 212);
+  }
+  
+  a:active {
+      color: rgb(69, 28, 116);
+  }
+  
+  a:visited {
+      color: rgb(212, 142, 13);
+  }
